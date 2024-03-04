@@ -23,3 +23,28 @@ document.getElementById('color').innerHTML = ('Colore preferito: ' + userColor);
 const suggestPwd = userName + userSurname + userColor + '23';
 console.log(suggestPwd);
 document.getElementById('pwd').innerHTML = ('Password suggerita: ' + suggestPwd);
+
+
+// BONUS
+// chiedi all'utente un numero
+// somma il numero a 23
+// stampa la password sulla pagina con nomecognomecolorepreferito(23+numeroinserito)
+// es. numero inserito => 5
+// stampare=> mariorossiblu28
+
+// ACQUISIZIONE DATI
+// Chiedo il numero:
+let userNumber = prompt('Ciao, dimmi un numero!')
+// CONVERSIONE IN VALORE NUMERICO
+let userNumberAsNumeric = parseInt(userNumber);
+// SOMMA
+let sum = userNumberAsNumeric + 23;
+// STAMPO
+console.log('Numero: ' + userNumber)
+document.getElementById('number').innerHTML = ('Il numero scelto è: ' + userNumber);
+
+// LOGICA E OUTPUT
+const newUserPwd = userName + userSurname + userColor + sum;
+console.log(newUserPwd);
+// STAMPO
+document.getElementById('newpwd').innerHTML = ('Nuova password suggerita: ' + newUserPwd);
