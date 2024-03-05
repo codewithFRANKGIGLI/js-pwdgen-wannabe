@@ -11,16 +11,16 @@ const userName = prompt('Ciao, qual è il tuo nome?')
 console.log('Nome: ' + userName)
 document.getElementById('name').innerHTML = ('Nome: ' + userName);
 // Chiedo il cognome:
-const userSurname = prompt('e il tuo cognome?')
-console.log('Cognome: ' + userSurname)
-document.getElementById('surname').innerHTML = ('Cognome: ' + userSurname);
+const userLastname = prompt('e il tuo cognome?')
+console.log('Cognome: ' + userLastname)
+document.getElementById('surname').innerHTML = ('Cognome: ' + userLastname);
 // Chiedo il colore preferito:
 const userColor = prompt('Qual è il tuo colore preferito?')
 console.log('Colore Preferito: ' + userColor)
 document.getElementById('color').innerHTML = ('Colore preferito: ' + userColor);
 
 // LOGICA e OUTPUT
-const suggestPwd = userName + userSurname + userColor + '23';
+const suggestPwd = userName + userLastname + userColor + '23';
 console.log(suggestPwd);
 document.getElementById('pwd').innerHTML = ('Password suggerita: ' + suggestPwd);
 
@@ -44,7 +44,7 @@ console.log('Numero: ' + userNumber)
 document.getElementById('number').innerHTML = ('Il numero scelto è: ' + userNumber);
 
 // LOGICA E OUTPUT
-const newUserPwd = userName + userSurname + userColor + sum;
+const newUserPwd = userName + userLastname + userColor + sum;
 console.log(newUserPwd);
 // STAMPO
 document.getElementById('newpwd').innerHTML = ('Nuova password suggerita: ' + newUserPwd);
